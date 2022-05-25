@@ -1,0 +1,56 @@
+.footer {
+  padding: 28px 0px 24px 0px;
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@mixin footer__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.address {
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-color);
+    margin-top: 20px;
+  }
+
+  &__text {
+    @include footer__text();
+    margin-top: 8px;
+  }
+}
+
+.contacts {
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--text-color);
+  }
+
+  &__links {
+    margin-top: 15px;
+  }
+
+  &__link {
+    @include footer__text();
+    cursor: pointer;
+  }
+
+  &__link:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
