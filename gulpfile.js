@@ -32,7 +32,7 @@ const dev = gulp.series(
   )
 )
 
-const prod = mainTasks
+const build = mainTasks
 
 export { dev }
-export { prod }
+export { build }
