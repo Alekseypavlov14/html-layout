@@ -12,6 +12,29 @@
     flex: 1 0 50%;
   }
 
+  @media (max-width: 1225px) {
+    height: fit-content;
+    padding: 50px 0px;
+
+    .content {
+      flex-direction: column;
+    }
+
+    &__image, &__content {
+      flex: none;
+    }
+
+    &__image {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    &__image {
+      display: none;
+    }
+  }
+
   &__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;

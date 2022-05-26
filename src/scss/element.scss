@@ -4,8 +4,18 @@
   --text-color: #30444E;
 }
 
+body {
+  width: 100vw;
+}
+
 ._container {
   width: 1125px;
   height: 100%;
   margin: 0px auto;
+}
+
+@media (max-width: 1225px) {
+  ._container {
+    width: 90%;
+  }
 }
