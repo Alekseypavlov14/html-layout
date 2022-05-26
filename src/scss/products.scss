@@ -14,6 +14,14 @@
   &__cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1199px) {
+    &__cards {
+      justify-content: space-around;
+      text-align: center;
+    }
   }
 }
 
@@ -53,5 +61,21 @@
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 150%;
+  }
+
+  @media (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-top: 16px;
+    }
+
+    &__button {
+      margin: 0px auto;
+      margin-top: 20px;
+    }
   }
 }

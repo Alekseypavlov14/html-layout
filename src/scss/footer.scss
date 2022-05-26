@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @media (max-width: 410px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }
 
