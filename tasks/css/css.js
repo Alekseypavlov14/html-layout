@@ -6,6 +6,7 @@ import replace from 'gulp-replace'
 import autoPrefixer from 'gulp-autoprefixer'
 import clean from 'gulp-clean-css'
 import rename from 'gulp-rename'
+import groupMediaQueries from 'gulp-group-css-media-queries'
 
 const sass = gulpSass(dartSass)
 
@@ -15,6 +16,7 @@ export const css = () => {
     .pipe(sass({ 
       outputStyle: 'expanded'
     }))
+    .pipe(groupMediaQueries())
     .pipe(autoPrefixer({
       grid: true,
       cascade: true,
